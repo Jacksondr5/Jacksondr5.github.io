@@ -83,7 +83,7 @@ PropTypes checks the data types of any properties passed into a component. If th
 * For the Dev:
   * o PropTypes will immediately alert you if a component is rendered with incorrect/missing properties, making some bugs extremely obvious.
   * Since the PropTypes are spelled out in the source code, it acts as a sort of documentation. We can easily see what we can/should pass into a component. Below is an example.
-    ![Image of ptop-types in NEAT Code](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/propTypes.png)
+    ![Image of ptop-types in NEAT Code](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/propTypes.jpg)
 
 **Risk**: The PropTypes code only runs in development, and is completely independent of any other code. We can delete this at any time.
 
@@ -103,7 +103,7 @@ The goal of using this is to provide a single source of truth for the data on th
   * State management is one of the most difficult parts of modern web development. The MVC model works well until you have a lot of interconnected data, and then handling how that data flows can become a problem. Redux helps solve this problem by providing a single store (basically a model) for your data. All the important data lives in this store and views subscribe to this store to get their data.
   * Redux also enforces a specific way of updating this data, through plain objects that describe the change. This way, all of the changes to the data are serializable and replay-able. We can use hot reloading to speed up development. If you’re working on a feature that’s behind several clicks and a search, the app will automatically navigate right back to where you were whenever it detects a change in the code files.
   * Lots of errors/bugs are caused by data being wrong or undefined. Before using Redux, I found myself using console.log() to track down pretty much every problem. I would have to trace the data through the app to figure out where it went wrong. Redux lets us use the Redux DevTools, which gives the developer an interactive tree of all the data. I have found it much easier to locate problems in my code when I can see all the data like this:
-    ![Image of examining data in Redux DevTools](https://static.pexels.com/photos/20787/pexels-photo.jpg)
+    ![Image of examining data in Redux DevTools](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/reduxDevTools.jpg)
   * Both the single source of truth and explicit state changes make it possible for us to get a complete picture of what a user did when they used our app. We can build a bug reporting system in the app that sends us the user’s state history. With this, we don’t have to work with the user to try and reproduce the problem; we just replay the state history to find the problem. This can be automatic on error detection, or the user can send us a bug report with the history included.
   * The logic to update the source of truth is implemented in pure functions, which are very easy to test.
 * For the User:
