@@ -18,9 +18,9 @@ This is going to be a long web page, so for each dependency, I've included a sum
 
 ## [React](https://reactjs.org/)
 
-| Rating | Benefit | Risk | Prevalence in our Code | Effort to Learn | Effort to Remove |
-| ------ | ------- | ---- | ---------------------- | --------------- | ---------------- |
-| 5      | 2       | 4    | 3-4                    | 4-5\*           |
+| Benefit | Risk | Prevalence in our Code | Effort to Learn | Effort to Remove |
+| ------- | ---- | ---------------------- | --------------- | ---------------- |
+| 5       | 2    | 4                      | 3-4             | 4-5\*            |
 
 _\*:Depending on what we replace React with, we may or may not have to do an entire rewrite._
 
