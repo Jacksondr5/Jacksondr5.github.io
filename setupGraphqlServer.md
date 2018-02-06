@@ -4,7 +4,7 @@ _Be sure you've [set up Node and Yarn](https://jacksondr5.github.io/nodeYarn) fi
 
 _If you just want to play around with a small GraphQL instance, check out the [Playgrounds](https://jacksondr5.github.io/playgrounds) page first._
 
-I recommend using [this starter project]() that I made. The documentation on Apollo's sites still needs some work, and it took me a while to get a setup that I liked. This should give you a good starting base for your project. Once you tweak the code to your liking, run `yarn start` to start the server.
+I recommend using [this starter project](https://github.com/Jacksondr5/starter-graphql-project) that I made. The documentation on Apollo's sites still needs some work, and it took me a while to get a setup that I liked. This should give you a good starting base for your project. Once you tweak the code to your liking, run `yarn start` to start the server.
 
 A few notes:
 
