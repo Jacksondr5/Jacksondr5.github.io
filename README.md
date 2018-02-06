@@ -16,7 +16,7 @@
 
 #### Tech Stack
 
-&nbsp;&nbsp;&nbsp;&nbsp;I've split up the technology I'm using into groups based on the part of the app they're in. Each link will take you to a short write up I've done on the tool.
+I've split up the technology I'm using into groups based on the part of the app they're in. Each link will take you to a short write up I've done on the tool.
 
 ### Front End
 
@@ -42,4 +42,12 @@
 
 [Jest and Enzyme](https://jacksondr5.github.io/testing)
 
-# Setting Up an Environment (under development)
+# Setting Up an Environment
+
+If you just want to play around with a particular library, check out the [Playgrounds](https://jacksondr5.github.io/playgrounds) page first. It has some cloud based coding environments set up where you can check out some of the tools I've talked about here. If you want to set up a development environment on your local box, I've created some guides for that as well.
+
+[Installing Node and Yarn](https://jacksondr5.github.io/nodeYarn)
+
+[Setting up a React App](https://jacksondr5.github.io/setupReactApp)
+
+[Setting up a GraphQL Server](https://jacksondr5.github.io/setupGraphqlServer)
