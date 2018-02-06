@@ -12,7 +12,7 @@ The goal of using this is to provide a single source of truth for the data on th
   * State management is one of the most difficult parts of modern web development. The MVC model works well until you have a lot of interconnected data, and then handling how that data flows can become a problem. Redux helps solve this problem by providing a single store (basically a model) for your data. All the important data lives in this store and views subscribe to this store to get their data.
   * Redux also enforces a specific way of updating this data, through plain objects that describe the change. This way, all of the changes to the data are serializable and replay-able. We can use hot reloading to speed up development. If you’re working on a feature that’s behind several clicks and a search, the app will automatically navigate right back to where you were whenever it detects a change in the code files.
   * Lots of errors/bugs are caused by data being wrong or undefined. Before using Redux, I found myself using console.log() to track down pretty much every problem. I would have to trace the data through the app to figure out where it went wrong. Redux lets us use the Redux DevTools, which gives the developer an interactive tree of all the data. I have found it much easier to locate problems in my code when I can see all the data like this:
-    ![Image of examining data in Redux DevTools](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/reduxDevTools.jpg)
+    ![Image of examining data in Redux DevTools](https://jacksondr5.github.io/imgs/reduxDevTools.jpg)
   * Both the single source of truth and explicit state changes make it possible for us to get a complete picture of what a user did when they used our app. We can build a bug reporting system in the app that sends us the user’s state history. With this, we don’t have to work with the user to try and reproduce the problem; we just replay the state history to find the problem. This can be automatic on error detection, or the user can send us a bug report with the history included.
   * The logic to update the source of truth is implemented in pure functions, which are very easy to test.
 * For the User:
@@ -39,14 +39,17 @@ Redux requires that all of our data be in a single object. While this brings a l
 **Benefits**
 
 * For the Dev:
+
   * Here is an example of some data from the NEAT state. It is a complex object with nested objects and arrays:
-  * ![Picture of an example state](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/immutHelperExampleState.jpg)
+  * ![Picture of an example state](https://jacksondr5.github.io/imgs/immutHelperExampleState.jpg)
+
     With regular JS, if we wanted to flip one of the settings(customer options), we would use this code to do it safely:
 
-    ![Picture of mutating the state with regular JS](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/immutHelperPlainUpdate.jpg)
+    ![Picture of mutating the state with regular JS](https://jacksondr5.github.io/imgs/immutHelperPlainUpdate.jpg)
+
     Here is the code with immutability-helper. It can parse the object we give it to find commands (denoted by $) to figure out what and how to update.
 
-    ![Picture of mutating the state with immutability-helper](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/immutHelperImmutUpdate.jpg)
+    ![Picture of mutating the state with immutability-helper](https://jacksondr5.github.io/imgs/immutHelperImmutUpdate.jpg)
 
 **Risk**: This utility function helps us update the data in the app, which is a core piece of functionality. If we did have to remove this, it would be a large task. However, the source code for this dependency is only 260 lines. It is very simple, unlikely to change soon, and is a highly recommended way to manage immutability.
 

@@ -11,9 +11,11 @@ PropTypes checks the data types of any properties passed into a component. If th
 **Benefits**
 
 * For the Dev:
-  * o PropTypes will immediately alert you if a component is rendered with incorrect/missing properties, making some bugs extremely obvious.
+
+  * PropTypes will immediately alert you if a component is rendered with incorrect/missing properties, making some bugs extremely obvious.
   * Since the PropTypes are spelled out in the source code, it acts as a sort of documentation. We can easily see what we can/should pass into a component. Below is an example.
-    ![Image of ptop-types in NEAT Code](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/propTypes.jpg)
+
+    ![Image of ptop-types in NEAT Code](https://jacksondr5.github.io/imgs/propTypes.jpg)
 
 **Risk**: The PropTypes code only runs in development, and is completely independent of any other code. We can delete this at any time.
 
