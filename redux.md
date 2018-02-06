@@ -40,10 +40,12 @@ Redux requires that all of our data be in a single object. While this brings a l
 
 * For the Dev:
   * Here is an example of some data from the NEAT state. It is a complex object with nested objects and arrays:
-    ![Picture of an example state](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/immutHelperExampleState.jpg)
+  * ![Picture of an example state](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/immutHelperExampleState.jpg)
     With regular JS, if we wanted to flip one of the settings(customer options), we would use this code to do it safely:
+
     ![Picture of mutating the state with regular JS](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/immutHelperPlainUpdate.jpg)
-    Here is the code with immutability-helper. It can parse the object we give it to find commands (denoted by \&) to figure out what and how to update.
+    Here is the code with immutability-helper. It can parse the object we give it to find commands (denoted by $) to figure out what and how to update.
+
     ![Picture of mutating the state with immutability-helper](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/immutHelperImmutUpdate.jpg)
 
 **Risk**: This utility function helps us update the data in the app, which is a core piece of functionality. If we did have to remove this, it would be a large task. However, the source code for this dependency is only 260 lines. It is very simple, unlikely to change soon, and is a highly recommended way to manage immutability.

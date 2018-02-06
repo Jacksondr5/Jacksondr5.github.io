@@ -20,13 +20,13 @@ I've split up the technology I'm using into groups based on the part of the app 
 
 ### Front End
 
-[React]()
+[React](https://jacksondr5.github.io/react)
 
-[material-ui]()
+[material-ui](https://jacksondr5.github.io/material)
 
 [Redux](https://jacksondr5.github.io/redux)
 
-[Smaller Tools]()
+[Smaller Tools](https://jacksondr5.github.io/viewSmall)
 
 ### Back End
 
