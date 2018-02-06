@@ -1,4 +1,4 @@
-### New E-Commerce Admin Tool Technology Overview and Setup Guide
+#### New E-Commerce Admin Tool Technology Overview and Setup Guide
 
 Here, I'll be going over the libraries and packages I'm currently using in the New E-Commerce Admin Tool (NEAT). I'm going to give a brief description of each, provide some links to resources so you can learn more, and tell you how to set up an environment to play around.
 
@@ -14,32 +14,32 @@ This is going to be a long web page, so for each dependency, I've included a sum
 | 4      | This gives us a lot of benefits. I highly recommend it                                                  | This project will probably introduce breaking changes in the future                                                     | This dependency is a core part of a large portion of the app                                                  | This will take some time to master                         | Removing this is a large effort                      |
 | 5      | This is essentially necessary                                                                           | There is a real chance this could be a problem in a couple of years                                                     | This thing is everywhere                                                                                      | You'll be using the documentation a lot                    | If you remove this you might as well rewrite the app |
 
-### Tech Stack
+#### Tech Stack
 
 I've split up the technology I'm using into groups based on the part of the app they're in. Each link will take you to a short write up I've done on the tool.
 
-## Front End
+### Front End
 
-# [React]()
+[React]()
 
-# [material-ui]()
+[material-ui]()
 
-# [Redux](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/redux.md)
+[Redux](https://jacksondr5.github.io/redux)
 
-# [Smaller Tools]()
+[Smaller Tools]()
 
-## Back End
+### Back End
 
-# [Node and Express](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/nodeExpress.md)
+[Node and Express](https://jacksondr5.github.io/nodeExpress)
 
-# [GraphQL](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/graphql.md)
+[GraphQL](https://jacksondr5.github.io/graphql)
 
-# [Apollo Server](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/apolloServer.md)
+[Apollo Server](https://jacksondr5.github.io/apolloServer)
 
-# [Apollo Client](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/apolloClient.md)
+[Apollo Client](https://jacksondr5.github.io/apolloClient)
 
-## Testing
+### Testing
 
-# [Jest and Enzyme](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/testing.md)
+[Jest and Enzyme](https://jacksondr5.github.io/testing)
 
 # Setting Up an Environment (under development)

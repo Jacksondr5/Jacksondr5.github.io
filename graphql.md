@@ -20,11 +20,11 @@ It also allows our clients to tell us exactly what data they need. Often we have
 ##Queries on a Single Endpoint
 
 Normal APIs deal with requests. A client hits an endpoint, provides some parameters, and the client returns a response. That response isn't guarenteed to have all the information that the client wants. The client may have to go back to other endpoints to request more data. This makes programming the client more difficult, as developers have to deal with resolving multiple requests and more networking errors.
-![Picture of multiple User requests]()
+![Picture of multiple User requests](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/normalAPIRequest.JPG)
 Once all the requests come in, the client has many loosely coupled pieces of data it needs to piece together, and it probably has more data than it needs. This is more of a problem on mobile connections, where loading speed and data plans become much more important factors we need to consider.
 
 GraphQL servers have one endpoint that you can send a query to. Clients can reference the data's types to ask the server for related data in a single request:
-![Picture of graphiql request]()
+![Picture of graphiql request](https://github.com/Jacksondr5/Jacksondr5.github.io/blob/master/imgs/graphiqlQuery.JPG)
 The above request would have taken multiple round trips to the server to fulfill on a normal REST API.
 
 ##Implemting GraphQL
