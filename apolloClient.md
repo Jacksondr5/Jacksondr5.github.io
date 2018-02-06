@@ -6,6 +6,6 @@
 
 \*: These ratings assume you've already decided to use GraphQL
 
-_Apollo Client is a client side library that handles interacting with the GraphQL server for us. It makes cachnig, pagination, and websockets easier for us to use._
+Apollo Client is a client side library that handles interacting with the GraphQL server for us. It makes cachnig, pagination, and websockets easier for us to use.
 
 Apollo client lives as a thin layer in our app. It interfaces with the GraphQL server for us, handling caching, errors, server events, and more. The footprint in our code is small. It basically replaces AJAX calls.

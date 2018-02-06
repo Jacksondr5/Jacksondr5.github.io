@@ -33,7 +33,7 @@ GraphQL servers have one endpoint that you can send a query to. Clients can refe
 
 The above request would have taken multiple round trips to the server to fulfill on a normal REST API.
 
-## Implemting GraphQL
+## Implementing GraphQL
 
 ![Picture of GraphQL system](https://jacksondr5.github.io/imgs/graphqlSystemDiagram.JPG)
 

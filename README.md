@@ -1,10 +1,10 @@
 #### New E-Commerce Admin Tool Technology Overview and Setup Guide
 
-Here, I'll be going over the libraries and packages I'm currently using in the New E-Commerce Admin Tool (NEAT). I'm going to give a brief description of each, provide some links to resources so you can learn more, and tell you how to set up an environment to play around.
+&nbsp;&nbsp;&nbsp;&nbsp;Here I'll be going over the libraries and packages I'm currently using in the New E-Commerce Admin Tool (NEAT). I'm going to give a brief description of each, provide some links to resources so you can learn more, and tell you how to set up an environment to play around.
 
-One thing I want to mention is that you’re going to see a large number of dependencies here. This might look like a lot of technical debt, but these tools are different than frameworks like .NET, Xamarin, or Angular. They’re usually pretty small. While .NET and Angular try to be frameworks that can do everything you could ever need to do, all of the dependencies here focus on doing one particular thing. In fact, the some of the developers that make these tools have stated that they intentionally limit the scope of their projects to keep things simple. This lets us carefully pick the stuff we need.
+&nbsp;&nbsp;&nbsp;&nbsp;One thing I want to mention is that you’re going to see a large number of dependencies here. This might look like a lot of technical debt, but these tools are different than frameworks like .NET, Xamarin, or Angular. They’re usually pretty small. While .NET and Angular try to be frameworks that can do everything you could ever need to do, all of the dependencies here focus on doing one particular thing. In fact, the some of the developers that make these tools have stated that they intentionally limit the scope of their projects to keep things simple. This lets us carefully pick the stuff we need.
 
-This is going to be a long web page, so for each dependency, I've included a summary table that rates the dependency on benefit, risk, prevalence in our code, effort to learn, and effort to remove. Here's a reference for that table.
+&nbsp;&nbsp;&nbsp;&nbsp;This is going to be a long discussion, so for each dependency, I've included a summary table that rates the dependency on benefit, risk, prevalence in our code, effort to learn, and effort to remove. Here's a reference for that table.
 
 | Rating | Benefit                                                                                                 | Risk                                                                                                                    | Prevalence in our Code                                                                                        | Effort to Learn                                            | Effort to Remove                                     |
 | ------ | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------- |
@@ -16,7 +16,7 @@ This is going to be a long web page, so for each dependency, I've included a sum
 
 #### Tech Stack
 
-I've split up the technology I'm using into groups based on the part of the app they're in. Each link will take you to a short write up I've done on the tool.
+&nbsp;&nbsp;&nbsp;&nbsp;I've split up the technology I'm using into groups based on the part of the app they're in. Each link will take you to a short write up I've done on the tool.
 
 ### Front End
 

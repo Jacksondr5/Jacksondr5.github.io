@@ -5,7 +5,8 @@
 | 4-5\*   | 3    | 4                      | 4\*\*           | 4                |
 
 \*:Having a UI library is necessary, in my opinion. However, there are a lot of them, and Material-UI doesn’t have to be that one.
-\*:Some parts of M-UI can be difficult to grasp, but the high effort mostly comes from how many components there are. You'll be referencing the docs a lot, but it's not particularly hard most of the time.
+
+\*\*:Some parts of M-UI can be difficult to grasp, but the high effort mostly comes from how many components there are. You'll be referencing the docs a lot, but it's not particularly hard most of the time.
 
 This is a UI component library we would use to make our app beautiful. There are tons of components that we can use, all of which follow Google’s Material Design philosophy. These UI elements are the building blocks of our view.
 
