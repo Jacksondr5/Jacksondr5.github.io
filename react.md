@@ -4,7 +4,7 @@
 | ------- | ---- | ---------------------- | --------------- | ---------------- |
 | 5       | 2    | 4                      | 3-4             | 4-5\*            |
 
-_\*:Depending on what we replace React with, we may or may not have to do an entire rewrite._
+\*:Depending on what we replace React with, we may or may not have to do an entire rewrite.
 
 React is the basis for our view layer. It allows us to code our apps in a declarative way, break our code down into components, and opens us up to pretty much every other dependency on the list.
 
