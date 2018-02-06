@@ -4,56 +4,12 @@ _Be sure you've [set up Node and Yarn](https://jacksondr5.github.io/nodeYarn) fi
 
 _If you just want to play around with a small GraphQL instance, check out the [Playgrounds](https://jacksondr5.github.io/playgrounds) page first._
 
-1. Create a project using `yarn init` in the directory where you want your project. It will ask you some questions, the only important one is the name, you can just hit enter for the other ones. Yarn will generate a `project.json` which holds information about your project.
-2. Run `yarn add apollo-server-express graphql-tools grapql`
-3. Place the following code into your index.js file
+I recommend using [this starter project]() that I made. The documentation on Apollo's sites still needs some work, and it took me a while to get a setup that I liked. This should give you a good starting base for your project.
 
-```javascript
-const express = require('express');
+A few notes:
 
-// This package automatically parses JSON requests.
-const bodyParser = require('body-parser');
-
-//This package deals with CORS
-const cors = require('cors');
-
-// This package will handle GraphQL server requests and responses
-// for you, based on your schema.
-const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
-
-//Your schame should be defined in this file
-const schema = require('./schema.js');
-
-// This package lets us make requests to SQL databases
-const sql = require('mssql');
-
-const config = {
-  user: 'someUserName',
-  password: 'theCorrectPassword',
-  server: 'yourDBServer',
-  database: 'yourDB',
-};
-
-// Connects mssql to the database
-sql.connect(config);
-
-var app = express();
-app.use(cors());
-app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
-// Optional, configures the Graphiql IDE at localhost:[port]/graphiql
-app.use(
-  '/graphiql',
-  graphiqlExpress({
-    endpointURL: '/graphql',
-  }),
-);
-
-const PORT = 8080;
-app.listen(PORT, () => {
-  console.log(`GraphQL server running on port ${PORT}.`);
-});
-```
-
-4. Define a schema in `\[yourProjectDir]/schema/index.js`
+* This doesn't actually work. Since I'm hosting this on a public site, I removed anything that can relate to AgF systems. The purpose of this project is to give you a file structure that you can expand upon to make an app. If you're just trying to experiment with GraphQL, I recommend making your resolvers return constant data you define in the project instead of trying to connect to a DB/API.
+* I recommend defining new types and their resolvers in their own file (like the `src/schema/User.js` file). This is not necessary at all, but it keeps your project clean. None of the sample projects I saw on the internet did this. I think this is one of those times where there's just a gap between tutorials and real code.
+* Run `yarn start` to start the server. I've installed a package called [nodemon](https://www.npmjs.com/package/nodemon) that will watch your source code files for changes and restart the server when you save.
 
 You are now set up to user GraphQL. From here, reference the [server](https://www.apollographql.com/docs/apollo-server/example.html) and [graphql-tool](https://www.apollographql.com/docs/graphql-tools/) docs. The `graqphql-tools` ones are the ones you'll use the most. They're a little hard to follow at times, so I'm working on cleaning up my source code and sharing it as a reference for what a real server looks like.

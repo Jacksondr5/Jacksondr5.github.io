@@ -10,4 +10,6 @@ In order to use `create-react-app` open up cmd/PowerShell and type
 
 `npx create-react-app [directoryYouWantYourAppIn]`
 
-`npx` is a utility that ships with `npm`. It checks the npm repo for the latest version of the script before running it. `create-react-app` will build a project folder for you, setting you up to start coding. Read more [here](https://github.com/facebook/create-react-app) about what to do afterwards to set up your own project.
+`npx` is a utility that ships with `npm`. It checks the npm repo for the latest version of the script before running it. `create-react-app` will build a project folder for you, setting you up to start coding.
+
+Read more [here](https://github.com/facebook/create-react-app) about what to do afterwards to set up your own project.

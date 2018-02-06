@@ -10,9 +10,9 @@ Some important things to note:
 
 1. Download Node [here](https://nodejs.org/en/). Node will come with npm, which you need to make Yarn work. Be sure to install the latest LTS version (8 as of writing), not the current version (9 as of writing). Run the installer.
 2. Download Yarn [here](https://yarnpkg.com/en/docs/install). Run the installer.
-3. Configure npm to work behind our corporate proxy. npm relies on a SSL certificate chain to work, and it doesn't like the self-signed AgF certificate unless you tell it to. If you already have an AgF certificate, you can skip to step X.
+3. Configure npm to work behind our corporate proxy. npm relies on a SSL certificate chain to work, and it doesn't like the self-signed AgF certificate unless you tell it to. If you already have an AgF certificate, you can skip to step 6.
 4. Follow [these instructions](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) until step 6. After adding the snap-in navigate to Console Root -> Certificates -> Trusted Root Certificate Authorities -> AgFirst Farm Credit Bank.
 5. Open the certificate, and under **Details** select **Copy to File...**. Export the certificate **as a .CER** to a good place.
 6. Go back to cmd/PowerShell and type `npm config set cafile C:\\path\to\your\cert.cer`
 
-You should now be set up to use Node and Yarn. Continue on to learn how to set up a [React app](https://jacksondr5.github.io/setupReactApp) or a [GraphQL server].
+You should now be set up to use Node and Yarn. Continue on to learn how to set up a [React app](https://jacksondr5.github.io/setupReactApp) or a [GraphQL server](https://jacksondr5.github.io/setupGraphqlServer).
